@@ -21,9 +21,6 @@ import java.util.Map;
 @Service
 public class ShoppingCartServiceImpl implements ShoppingCartService {
 
-    @Autowired
-    private ProductRepository productRepository;
-
     private Map<Product, Integer> products = new HashMap<>();
 
     /**
