@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <div th:replace="/fragments/header :: header"/>
+</head>
+
+<body>
+
+<div th:replace="/fragments/header :: navbar"/>
+
+<div class="container">
+
+    <h1 class="jumbotron">Thank you for placing an order with us. We will notify once your order has been shipped.</h1>
+
+    <div class="row panel-body">
+        <a th:href="@{'/home'}" class="col-md-1">
+            <button type="button" class="btn btn-primary btn-block" th:text="Shop">Shop</button>
+        </a>
+    </div>
+
+</div>
+
+<div th:replace="/fragments/footer :: footer"/>
+
+</body>
+</html>

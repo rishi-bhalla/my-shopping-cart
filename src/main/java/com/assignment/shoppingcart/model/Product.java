@@ -7,6 +7,11 @@ import javax.persistence.*;
 import javax.validation.constraints.Min;
 import java.math.BigDecimal;
 
+/**
+ * Product class to represent the product entity in the database.
+ * The class contains attributes annotated with validation annotations
+ * to make sure a valid entity gets injected into the database.
+ */
 @Data
 @Entity
 @Table(name = "product")
